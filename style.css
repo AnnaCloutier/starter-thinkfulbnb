@@ -64,9 +64,25 @@ header {
   color: #fff;
 }
 
-header nav ul li {
+header nav {
   display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  /*
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
   list-style-type: none;
+  font-size: 20px;
+  */
+}
+
+header nav ul li {
+  list-style-type: none;
+  font-size: 20px;
 }
 
 header nav ul li a {
@@ -82,20 +98,32 @@ header nav ul li a:hover {
 
 /* -------  Search Form ------- */
 form {
+  /*
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  */
   border: 2px solid #ff385c;
   padding: 10px;
 }
 
 form label {
   font-weight: bold;
+  font-size: 18px;
+  padding-bottom: 5px;
+
 }
 
 form select,
 form input {
   margin-bottom: 20px;
-  width: 180px;
+  width: 200px;
+}
+
+form div {
+  display: flex;
+  justify-content: space-between;
 }
 
 form button {
@@ -120,3 +148,44 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+@media all and (min-width: 480px) {
+  .group {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .item {
+    flex: 1;
+  }
+  
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  header nav ul {
+    align-items: center;
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+  }
+
+  form select,
+  form input {
+    margin-bottom: 0px;
+  }
+
+  form button {
+    flex: 1;
+  }
+
+  form div {
+    flex-direction: column;
+  }
+
+}
