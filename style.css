@@ -60,7 +60,7 @@ header {
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 72px;
+  font-size: 50px;
   color: #fff;
 }
 
@@ -75,7 +75,7 @@ header nav ul {
 
 header nav ul li {
   list-style-type: none;
-  font-size: 20px;
+
 }
 
 header nav ul li a {
@@ -91,12 +91,7 @@ header nav ul li a:hover {
 
 /* -------  Search Form ------- */
 form {
-  /*
-  display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
-  */
   border: 2px solid #ff385c;
   padding: 10px;
 }
